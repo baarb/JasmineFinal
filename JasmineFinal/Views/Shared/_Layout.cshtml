@@ -27,10 +27,18 @@
             <div class="header clearfix">
                 <nav>
                     <ul class="nav nav-pills pull-right">
-                        <li role="presentation" id="main">@Html.ActionLink("Home","Index","Home")</li>
-                        <li id="reg" role="presentation">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
-                        <li id="log" role="presentation" >@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
-                      
+                        <li role="presentation" id="main">@Html.ActionLink("Home","Index","Home")</li>   
+                        @if (!User.Identity.IsAuthenticated) { 
+                            <li id="log" role="presentation" >@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                            <li id="reg" role="presentation">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+                        }
+                        else
+                        {
+                            <li id="log" role="presentation">@Html.ActionLink(@User.Identity.Name, "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
+                            <li>@Html.ActionLink("Inbox", "Index", "Messages")</li>
+                            <li>@Html.ActionLink("Log Off", "LogOff", "Account")</li>
+                            
+                        }
                      </ul>
                 </nav>
                 <div class="logo">

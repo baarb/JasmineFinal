@@ -2,6 +2,7 @@
     ViewBag.Title = "Tweens2Teens";
 }
 
+
 <a name="about"></a>
 <div class="intro-header">
     <div class="container">
@@ -15,11 +16,13 @@
                     <ul class="list-inline intro-social-buttons">
                         <li>
 
-                        <li id="log" role="presentation">@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "BTNCLASS2" })</li>
-                        <li></li>
+                        <li id="log" role="presentation">
+                            @Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink", @class = "BTNCLASS2" })
+                        </li>
                         <li>
-                            
-@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "BTNCLASS2" })
+                        </li>
+                        <li>
+                            @Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink", @class = "BTNCLASS2" })
                         </li>
                     </ul>
                 </div>

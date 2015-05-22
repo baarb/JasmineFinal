@@ -1,0 +1,50 @@
+﻿@model JasmineFinal.Models.Message
+
+@{
+    ViewBag.Title = "Details";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Message</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ToUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ToUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FromUserName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FromUserName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.UserMessage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.UserMessage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DateSent)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DateSent)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
