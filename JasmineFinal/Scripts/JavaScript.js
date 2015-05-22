@@ -17,6 +17,8 @@
         document.getElementById("log").setAttribute("class", "active");
     else document.getElementById("main").setAttribute("class", "active");
 
+    document.getElementById('teen').onchange = disablefield;
+    document.getElementById('tween').onchange = disablefield;
 };
 
 
@@ -43,4 +45,16 @@ function nameGen() {
     document.getElementById("userNameDisplay").innerHTML = name;
     document.getElementById("uName").value = name;
 
+}
+
+
+
+function disablefield()
+{
+if ( document.getElementById('tween').checked == true ){
+document.getElementById('FirstName').disabled=true;
+document.getElementById('LastName').disabled = true}
+else if (document.getElementById('teen').checked == true ){
+    document.getElementById('FirstName').disabled = false;
+    document.getElementById('LastName').disabled=false}
 }

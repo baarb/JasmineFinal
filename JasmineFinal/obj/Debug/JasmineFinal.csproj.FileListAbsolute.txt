@@ -50,6 +50,5 @@ c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\Jasmi
 c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\bin\Microsoft.Owin.Security.Google.xml
 c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\bin\Microsoft.Owin.Security.Twitter.xml
 c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\obj\Debug\JasmineFinal.csprojResolveAssemblyReference.cache
 c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\obj\Debug\JasmineFinal.dll
 c:\users\we can code it\documents\visual studio 2013\Projects\JasmineFinal\JasmineFinal\obj\Debug\JasmineFinal.pdb
