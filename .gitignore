@@ -204,3 +204,8 @@ FakesAssemblies/
 
 # Visual Studio 6 workspace options file
 *.opt
+
+#Files I hate
+JasmineFinal/obj/Debug/JasmineFinal.csprojResolveAssemblyReference.cache
+JasmineFinal/obj/
+JasimeFinal/App_Data
