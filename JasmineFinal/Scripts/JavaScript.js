@@ -19,6 +19,7 @@
 
     document.getElementById('teen').onchange = disablefield;
     document.getElementById('tween').onchange = disablefield;
+    
 };
 
 
@@ -57,4 +58,17 @@ document.getElementById('LastName').disabled = true}
 else if (document.getElementById('teen').checked == true ){
     document.getElementById('FirstName').disabled = false;
     document.getElementById('LastName').disabled=false}
+}
+
+function whatever() {
+    $.getJSON('../json1.json', function (floob) {
+            var i;
+            for (i = 0; i < floob.data.length; i++) {
+                if (document.getElementById('LastName').value === floob.data[i][8]) {
+                    if (document.getElementById('FirstName').value === floob.data[i][9]) {
+                        document.getElementById('regbutton').style.visibility='hidden';
+                    }
+                }
+            }
+        });
 }

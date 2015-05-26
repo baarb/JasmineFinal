@@ -30,18 +30,22 @@
                 <div id="userNameDisplay"></div>
                 <button onclick="this.style.visibility='hidden'; [nameGen()];" id="genButton" >Generate Username</button>
             </div>
-            (You MUST Use Random Generated Username!)<br />
-            <input id="uName" name="uName" type="hidden" placeholder="Username" disabled /><br />
 
-            Are You A Teen Or Tween?<br />
-            (MUST PICK ONE)<br />
-            Tween:(6th Grade) <input type="radio" name="age" value="no" id="tween" /><br />
-            Teen:(12th Grade/Freshman in College):<input type="radio" name="age" value="yes" id="teen" /><br />
-            First Name: <input id="FirstName" type="text" size="25" />
-            Last Name: <input id="LastName" type="text" size="25" /><br />
-            (TEENS MUST PROVIDE FRIST AND LAST NAME FOR A BACKGROUND CHECK!)<br />
+                (You MUST Use Random Generated Username!)<br />
+                <input id="uName" name="uName" type="hidden" placeholder="Username" disabled /><br />
 
-         
+                Are You A Teen Or Tween?<br />
+                (MUST PICK ONE)<br />
+                Tween:(6th Grade) <input type="radio" name="age" value="no" id="tween" /><br />
+                Teen:(12th Grade/Freshman in College):<input type="radio" name="age" value="yes" id="teen" /><br />
+            <form>
+                First Name: <input id="FirstName" value="" type="text" size="25" />
+                Last Name: <input id="LastName" value="" type="text" size="25" />
+            </form>
+                 <button onclick="whatever();">Check This Out</button><br />
+                (TEENS MUST PROVIDE FRIST AND LAST NAME FOR A BACKGROUND CHECK!)<br />
+            
+            
 
 
 
@@ -79,7 +83,9 @@
     <div class="form-group">
         <div class="col-lg-2"></div>
         <div class="col-md-10">
-            <input type="submit" class="btn btn-primary" id="regbutton" value="Register" />
+            <form>
+                <input type="submit" class="btn btn-primary" id="regbutton" value="Register" />
+            </form>
         </div>
     </div>
 

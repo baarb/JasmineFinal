@@ -43,6 +43,7 @@ namespace JasmineFinal.Controllers
             message.FromUserName = User.Identity.Name;
 
             return View(message);
+
         }
 
         // POST: Messages/Create
